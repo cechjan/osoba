@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Osoba</title>
+</head>
+<body>
+    <h1>Vlastní objekty v JS</h1>
+    <div class="col left">
+    <h2>Karta osoby</h2>
+        <form>
+            <p>
+                <label for="jmeno">Jméno</label>
+                <input type="text" id="jmeno">	
+            </p>
+            <p>
+                <label for="prijmeni">Příjmení</label>
+                <input type="text" id="prijmeni">	
+            </p>	
+            <p>
+                <label for="vaha">Váha</label>
+                <input type="number" id="vaha" value="75"> kg	
+            </p>	
+            <p>
+                <label for="vyska">Výška</label>
+                <input type="number" id="vyska" value="180"> cm	
+            </p>
+            <p>
+                <label for="datumNarozeni">Datum narození</label>
+                <input type="date" id="datumNarozeni" >	
+            </p>
+            <p>
+                <button type="button" id="potvrdit">Potvrdit</button>
+            </p>
+        </form>
+    </div>
+    <div class="col right">
+    <h2>Seznam osob</h2>
+        <p>
+            <select id="seznam" size="5">
+            </select>
+        </p>
+        <p>
+            <button type="button" id="novy">Nový</button>
+            <button type="button" id="smazat">Smazat</button>
+        </p>
+    </div>
+    
+    <hr>
+    <h2>Vizitka osoby</h2>
+    <div id="vizitka"></div>    
+    <script src="person.js"></script>
+</body>
+</html>
